@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark tech background with rounded corners -->
+  <rect width="120" height="120" rx="28" fill="#111827" />
+
+  <!-- The Stylized 'X' -->
+  <line x1="36" y1="36" x2="84" y2="84" stroke="url(#techGrad)" stroke-width="16" stroke-linecap="round" />
+  <line x1="84" y1="36" x2="36" y2="84" stroke="url(#techGrad)" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Circuit Nodes on the corners -->
+  <circle cx="84" cy="36" r="8" fill="#00F2FE" />
+  <circle cx="36" cy="84" r="8" fill="#4FACFE" />
+</svg>
