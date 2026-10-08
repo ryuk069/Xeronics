@@ -10,180 +10,252 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as CartRouteImport } from './routes/cart'
-import { Route as SignupRouteImport } from './routes/signup'
-import { Route as WishlistRouteImport } from './routes/wishlist'
-import { Route as CategoriesSlugRouteImport } from './routes/categories/$slug'
-import { Route as LoginIndexRouteImport } from './routes/login/index'
-import { Route as ProductsProductIdRouteImport } from './routes/products/$productId'
-import { Route as UserAddressesIndexRouteImport } from './routes/user/addresses/index'
-import { Route as UserChangePasswordIndexRouteImport } from './routes/user/change-password/index'
-import { Route as UserOrdersIndexRouteImport } from './routes/user/orders/index'
-import { Route as UserProfileIndexRouteImport } from './routes/user/profile/index'
-import { Route as UserSessionsIndexRouteImport } from './routes/user/sessions/index'
+import { Route as ProtectedCartRouteImport } from './routes/_protected/cart'
+import { Route as ProtectedWishlistRouteImport } from './routes/_protected/wishlist'
+import { Route as PublicAuthForgotPasswordRouteImport } from './routes/_public/_auth/forgot-password'
+import { Route as PublicAuthLoginRouteImport } from './routes/_public/_auth/login'
+import { Route as PublicAuthResetPasswordRouteImport } from './routes/_public/_auth/reset-password'
+import { Route as PublicAuthSignupRouteImport } from './routes/_public/_auth/signup'
+import { Route as PublicAuthVerifyEmailRouteImport } from './routes/_public/_auth/verify-email'
+import { Route as PublicCategoriesIndexRouteImport } from './routes/_public/categories/index'
+import { Route as PublicProductsIndexRouteImport } from './routes/_public/products/index'
+import { Route as PublicProductsProductIdRouteImport } from './routes/_public/products/$productId'
+import { Route as ProtectedUserAddressesIndexRouteImport } from './routes/_protected/user/addresses/index'
+import { Route as ProtectedUserChangePasswordIndexRouteImport } from './routes/_protected/user/change-password/index'
+import { Route as ProtectedUserOrdersIndexRouteImport } from './routes/_protected/user/orders/index'
+import { Route as ProtectedUserProfileIndexRouteImport } from './routes/_protected/user/profile/index'
+import { Route as ProtectedUserSessionsIndexRouteImport } from './routes/_protected/user/sessions/index'
+import { Route as PublicProductsDealsIndexRouteImport } from './routes/_public/products/deals/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CartRoute = CartRouteImport.update({
-  id: '/cart',
+const ProtectedCartRoute = ProtectedCartRouteImport.update({
+  id: '/_protected/cart',
   path: '/cart',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SignupRoute = SignupRouteImport.update({
-  id: '/signup',
-  path: '/signup',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WishlistRoute = WishlistRouteImport.update({
-  id: '/wishlist',
+const ProtectedWishlistRoute = ProtectedWishlistRouteImport.update({
+  id: '/_protected/wishlist',
   path: '/wishlist',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CategoriesSlugRoute = CategoriesSlugRouteImport.update({
-  id: '/categories/$slug',
-  path: '/categories/$slug',
+const PublicAuthForgotPasswordRoute =
+  PublicAuthForgotPasswordRouteImport.update({
+    id: '/_public/_auth/forgot-password',
+    path: '/forgot-password',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PublicAuthLoginRoute = PublicAuthLoginRouteImport.update({
+  id: '/_public/_auth/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LoginIndexRoute = LoginIndexRouteImport.update({
-  id: '/login/',
-  path: '/login/',
+const PublicAuthResetPasswordRoute = PublicAuthResetPasswordRouteImport.update({
+  id: '/_public/_auth/reset-password',
+  path: '/reset-password',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsProductIdRoute = ProductsProductIdRouteImport.update({
-  id: '/products/$productId',
+const PublicAuthSignupRoute = PublicAuthSignupRouteImport.update({
+  id: '/_public/_auth/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicAuthVerifyEmailRoute = PublicAuthVerifyEmailRouteImport.update({
+  id: '/_public/_auth/verify-email',
+  path: '/verify-email',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicCategoriesIndexRoute = PublicCategoriesIndexRouteImport.update({
+  id: '/_public/categories/',
+  path: '/categories/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicProductsIndexRoute = PublicProductsIndexRouteImport.update({
+  id: '/_public/products/',
+  path: '/products/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicProductsProductIdRoute = PublicProductsProductIdRouteImport.update({
+  id: '/_public/products/$productId',
   path: '/products/$productId',
   getParentRoute: () => rootRouteImport,
 } as any)
-const UserAddressesIndexRoute = UserAddressesIndexRouteImport.update({
-  id: '/user/addresses/',
-  path: '/user/addresses/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UserChangePasswordIndexRoute = UserChangePasswordIndexRouteImport.update({
-  id: '/user/change-password/',
-  path: '/user/change-password/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UserOrdersIndexRoute = UserOrdersIndexRouteImport.update({
-  id: '/user/orders/',
-  path: '/user/orders/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UserProfileIndexRoute = UserProfileIndexRouteImport.update({
-  id: '/user/profile/',
-  path: '/user/profile/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UserSessionsIndexRoute = UserSessionsIndexRouteImport.update({
-  id: '/user/sessions/',
-  path: '/user/sessions/',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const ProtectedUserAddressesIndexRoute =
+  ProtectedUserAddressesIndexRouteImport.update({
+    id: '/_protected/user/addresses/',
+    path: '/user/addresses/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProtectedUserChangePasswordIndexRoute =
+  ProtectedUserChangePasswordIndexRouteImport.update({
+    id: '/_protected/user/change-password/',
+    path: '/user/change-password/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProtectedUserOrdersIndexRoute =
+  ProtectedUserOrdersIndexRouteImport.update({
+    id: '/_protected/user/orders/',
+    path: '/user/orders/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProtectedUserProfileIndexRoute =
+  ProtectedUserProfileIndexRouteImport.update({
+    id: '/_protected/user/profile/',
+    path: '/user/profile/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProtectedUserSessionsIndexRoute =
+  ProtectedUserSessionsIndexRouteImport.update({
+    id: '/_protected/user/sessions/',
+    path: '/user/sessions/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PublicProductsDealsIndexRoute =
+  PublicProductsDealsIndexRouteImport.update({
+    id: '/_public/products/deals/',
+    path: '/products/deals/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/cart': typeof CartRoute
-  '/signup': typeof SignupRoute
-  '/wishlist': typeof WishlistRoute
-  '/categories/$slug': typeof CategoriesSlugRoute
-  '/products/$productId': typeof ProductsProductIdRoute
-  '/login/': typeof LoginIndexRoute
-  '/user/addresses/': typeof UserAddressesIndexRoute
-  '/user/change-password/': typeof UserChangePasswordIndexRoute
-  '/user/orders/': typeof UserOrdersIndexRoute
-  '/user/profile/': typeof UserProfileIndexRoute
-  '/user/sessions/': typeof UserSessionsIndexRoute
+  '/cart': typeof ProtectedCartRoute
+  '/wishlist': typeof ProtectedWishlistRoute
+  '/forgot-password': typeof PublicAuthForgotPasswordRoute
+  '/login': typeof PublicAuthLoginRoute
+  '/reset-password': typeof PublicAuthResetPasswordRoute
+  '/signup': typeof PublicAuthSignupRoute
+  '/verify-email': typeof PublicAuthVerifyEmailRoute
+  '/products/$productId': typeof PublicProductsProductIdRoute
+  '/categories/': typeof PublicCategoriesIndexRoute
+  '/products/': typeof PublicProductsIndexRoute
+  '/user/addresses/': typeof ProtectedUserAddressesIndexRoute
+  '/user/change-password/': typeof ProtectedUserChangePasswordIndexRoute
+  '/user/orders/': typeof ProtectedUserOrdersIndexRoute
+  '/user/profile/': typeof ProtectedUserProfileIndexRoute
+  '/user/sessions/': typeof ProtectedUserSessionsIndexRoute
+  '/products/deals/': typeof PublicProductsDealsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/cart': typeof CartRoute
-  '/signup': typeof SignupRoute
-  '/wishlist': typeof WishlistRoute
-  '/categories/$slug': typeof CategoriesSlugRoute
-  '/products/$productId': typeof ProductsProductIdRoute
-  '/login': typeof LoginIndexRoute
-  '/user/addresses': typeof UserAddressesIndexRoute
-  '/user/change-password': typeof UserChangePasswordIndexRoute
-  '/user/orders': typeof UserOrdersIndexRoute
-  '/user/profile': typeof UserProfileIndexRoute
-  '/user/sessions': typeof UserSessionsIndexRoute
+  '/cart': typeof ProtectedCartRoute
+  '/wishlist': typeof ProtectedWishlistRoute
+  '/forgot-password': typeof PublicAuthForgotPasswordRoute
+  '/login': typeof PublicAuthLoginRoute
+  '/reset-password': typeof PublicAuthResetPasswordRoute
+  '/signup': typeof PublicAuthSignupRoute
+  '/verify-email': typeof PublicAuthVerifyEmailRoute
+  '/products/$productId': typeof PublicProductsProductIdRoute
+  '/categories': typeof PublicCategoriesIndexRoute
+  '/products': typeof PublicProductsIndexRoute
+  '/user/addresses': typeof ProtectedUserAddressesIndexRoute
+  '/user/change-password': typeof ProtectedUserChangePasswordIndexRoute
+  '/user/orders': typeof ProtectedUserOrdersIndexRoute
+  '/user/profile': typeof ProtectedUserProfileIndexRoute
+  '/user/sessions': typeof ProtectedUserSessionsIndexRoute
+  '/products/deals': typeof PublicProductsDealsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/cart': typeof CartRoute
-  '/signup': typeof SignupRoute
-  '/wishlist': typeof WishlistRoute
-  '/categories/$slug': typeof CategoriesSlugRoute
-  '/products/$productId': typeof ProductsProductIdRoute
-  '/login/': typeof LoginIndexRoute
-  '/user/addresses/': typeof UserAddressesIndexRoute
-  '/user/change-password/': typeof UserChangePasswordIndexRoute
-  '/user/orders/': typeof UserOrdersIndexRoute
-  '/user/profile/': typeof UserProfileIndexRoute
-  '/user/sessions/': typeof UserSessionsIndexRoute
+  '/_protected/cart': typeof ProtectedCartRoute
+  '/_protected/wishlist': typeof ProtectedWishlistRoute
+  '/_public/_auth/forgot-password': typeof PublicAuthForgotPasswordRoute
+  '/_public/_auth/login': typeof PublicAuthLoginRoute
+  '/_public/_auth/reset-password': typeof PublicAuthResetPasswordRoute
+  '/_public/_auth/signup': typeof PublicAuthSignupRoute
+  '/_public/_auth/verify-email': typeof PublicAuthVerifyEmailRoute
+  '/_public/products/$productId': typeof PublicProductsProductIdRoute
+  '/_public/categories/': typeof PublicCategoriesIndexRoute
+  '/_public/products/': typeof PublicProductsIndexRoute
+  '/_protected/user/addresses/': typeof ProtectedUserAddressesIndexRoute
+  '/_protected/user/change-password/': typeof ProtectedUserChangePasswordIndexRoute
+  '/_protected/user/orders/': typeof ProtectedUserOrdersIndexRoute
+  '/_protected/user/profile/': typeof ProtectedUserProfileIndexRoute
+  '/_protected/user/sessions/': typeof ProtectedUserSessionsIndexRoute
+  '/_public/products/deals/': typeof PublicProductsDealsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/cart'
-    | '/signup'
     | '/wishlist'
-    | '/categories/$slug'
+    | '/forgot-password'
+    | '/login'
+    | '/reset-password'
+    | '/signup'
+    | '/verify-email'
     | '/products/$productId'
-    | '/login/'
+    | '/categories/'
+    | '/products/'
     | '/user/addresses/'
     | '/user/change-password/'
     | '/user/orders/'
     | '/user/profile/'
     | '/user/sessions/'
+    | '/products/deals/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/cart'
-    | '/signup'
     | '/wishlist'
-    | '/categories/$slug'
-    | '/products/$productId'
+    | '/forgot-password'
     | '/login'
+    | '/reset-password'
+    | '/signup'
+    | '/verify-email'
+    | '/products/$productId'
+    | '/categories'
+    | '/products'
     | '/user/addresses'
     | '/user/change-password'
     | '/user/orders'
     | '/user/profile'
     | '/user/sessions'
+    | '/products/deals'
   id:
     | '__root__'
     | '/'
-    | '/cart'
-    | '/signup'
-    | '/wishlist'
-    | '/categories/$slug'
-    | '/products/$productId'
-    | '/login/'
-    | '/user/addresses/'
-    | '/user/change-password/'
-    | '/user/orders/'
-    | '/user/profile/'
-    | '/user/sessions/'
+    | '/_protected/cart'
+    | '/_protected/wishlist'
+    | '/_public/_auth/forgot-password'
+    | '/_public/_auth/login'
+    | '/_public/_auth/reset-password'
+    | '/_public/_auth/signup'
+    | '/_public/_auth/verify-email'
+    | '/_public/products/$productId'
+    | '/_public/categories/'
+    | '/_public/products/'
+    | '/_protected/user/addresses/'
+    | '/_protected/user/change-password/'
+    | '/_protected/user/orders/'
+    | '/_protected/user/profile/'
+    | '/_protected/user/sessions/'
+    | '/_public/products/deals/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  CartRoute: typeof CartRoute
-  SignupRoute: typeof SignupRoute
-  WishlistRoute: typeof WishlistRoute
-  CategoriesSlugRoute: typeof CategoriesSlugRoute
-  ProductsProductIdRoute: typeof ProductsProductIdRoute
-  LoginIndexRoute: typeof LoginIndexRoute
-  UserAddressesIndexRoute: typeof UserAddressesIndexRoute
-  UserChangePasswordIndexRoute: typeof UserChangePasswordIndexRoute
-  UserOrdersIndexRoute: typeof UserOrdersIndexRoute
-  UserProfileIndexRoute: typeof UserProfileIndexRoute
-  UserSessionsIndexRoute: typeof UserSessionsIndexRoute
+  ProtectedCartRoute: typeof ProtectedCartRoute
+  ProtectedWishlistRoute: typeof ProtectedWishlistRoute
+  PublicAuthForgotPasswordRoute: typeof PublicAuthForgotPasswordRoute
+  PublicAuthLoginRoute: typeof PublicAuthLoginRoute
+  PublicAuthResetPasswordRoute: typeof PublicAuthResetPasswordRoute
+  PublicAuthSignupRoute: typeof PublicAuthSignupRoute
+  PublicAuthVerifyEmailRoute: typeof PublicAuthVerifyEmailRoute
+  PublicProductsProductIdRoute: typeof PublicProductsProductIdRoute
+  PublicCategoriesIndexRoute: typeof PublicCategoriesIndexRoute
+  PublicProductsIndexRoute: typeof PublicProductsIndexRoute
+  ProtectedUserAddressesIndexRoute: typeof ProtectedUserAddressesIndexRoute
+  ProtectedUserChangePasswordIndexRoute: typeof ProtectedUserChangePasswordIndexRoute
+  ProtectedUserOrdersIndexRoute: typeof ProtectedUserOrdersIndexRoute
+  ProtectedUserProfileIndexRoute: typeof ProtectedUserProfileIndexRoute
+  ProtectedUserSessionsIndexRoute: typeof ProtectedUserSessionsIndexRoute
+  PublicProductsDealsIndexRoute: typeof PublicProductsDealsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -195,81 +267,116 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/cart': {
-      id: '/cart'
+    '/_protected/cart': {
+      id: '/_protected/cart'
       path: '/cart'
       fullPath: '/cart'
-      preLoaderRoute: typeof CartRouteImport
+      preLoaderRoute: typeof ProtectedCartRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/signup': {
-      id: '/signup'
-      path: '/signup'
-      fullPath: '/signup'
-      preLoaderRoute: typeof SignupRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/wishlist': {
-      id: '/wishlist'
+    '/_protected/wishlist': {
+      id: '/_protected/wishlist'
       path: '/wishlist'
       fullPath: '/wishlist'
-      preLoaderRoute: typeof WishlistRouteImport
+      preLoaderRoute: typeof ProtectedWishlistRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/categories/$slug': {
-      id: '/categories/$slug'
-      path: '/categories/$slug'
-      fullPath: '/categories/$slug'
-      preLoaderRoute: typeof CategoriesSlugRouteImport
+    '/_public/_auth/forgot-password': {
+      id: '/_public/_auth/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof PublicAuthForgotPasswordRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/login/': {
-      id: '/login/'
+    '/_public/_auth/login': {
+      id: '/_public/_auth/login'
       path: '/login'
-      fullPath: '/login/'
-      preLoaderRoute: typeof LoginIndexRouteImport
+      fullPath: '/login'
+      preLoaderRoute: typeof PublicAuthLoginRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products/$productId': {
-      id: '/products/$productId'
+    '/_public/_auth/reset-password': {
+      id: '/_public/_auth/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof PublicAuthResetPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/_auth/signup': {
+      id: '/_public/_auth/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof PublicAuthSignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/_auth/verify-email': {
+      id: '/_public/_auth/verify-email'
+      path: '/verify-email'
+      fullPath: '/verify-email'
+      preLoaderRoute: typeof PublicAuthVerifyEmailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/categories/': {
+      id: '/_public/categories/'
+      path: '/categories'
+      fullPath: '/categories/'
+      preLoaderRoute: typeof PublicCategoriesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/products/': {
+      id: '/_public/products/'
+      path: '/products'
+      fullPath: '/products/'
+      preLoaderRoute: typeof PublicProductsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/products/$productId': {
+      id: '/_public/products/$productId'
       path: '/products/$productId'
       fullPath: '/products/$productId'
-      preLoaderRoute: typeof ProductsProductIdRouteImport
+      preLoaderRoute: typeof PublicProductsProductIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/user/addresses/': {
-      id: '/user/addresses/'
+    '/_protected/user/addresses/': {
+      id: '/_protected/user/addresses/'
       path: '/user/addresses'
       fullPath: '/user/addresses/'
-      preLoaderRoute: typeof UserAddressesIndexRouteImport
+      preLoaderRoute: typeof ProtectedUserAddressesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/user/change-password/': {
-      id: '/user/change-password/'
+    '/_protected/user/change-password/': {
+      id: '/_protected/user/change-password/'
       path: '/user/change-password'
       fullPath: '/user/change-password/'
-      preLoaderRoute: typeof UserChangePasswordIndexRouteImport
+      preLoaderRoute: typeof ProtectedUserChangePasswordIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/user/orders/': {
-      id: '/user/orders/'
+    '/_protected/user/orders/': {
+      id: '/_protected/user/orders/'
       path: '/user/orders'
       fullPath: '/user/orders/'
-      preLoaderRoute: typeof UserOrdersIndexRouteImport
+      preLoaderRoute: typeof ProtectedUserOrdersIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/user/profile/': {
-      id: '/user/profile/'
+    '/_protected/user/profile/': {
+      id: '/_protected/user/profile/'
       path: '/user/profile'
       fullPath: '/user/profile/'
-      preLoaderRoute: typeof UserProfileIndexRouteImport
+      preLoaderRoute: typeof ProtectedUserProfileIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/user/sessions/': {
-      id: '/user/sessions/'
+    '/_protected/user/sessions/': {
+      id: '/_protected/user/sessions/'
       path: '/user/sessions'
       fullPath: '/user/sessions/'
-      preLoaderRoute: typeof UserSessionsIndexRouteImport
+      preLoaderRoute: typeof ProtectedUserSessionsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/products/deals/': {
+      id: '/_public/products/deals/'
+      path: '/products/deals'
+      fullPath: '/products/deals/'
+      preLoaderRoute: typeof PublicProductsDealsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -277,17 +384,22 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  CartRoute: CartRoute,
-  SignupRoute: SignupRoute,
-  WishlistRoute: WishlistRoute,
-  CategoriesSlugRoute: CategoriesSlugRoute,
-  ProductsProductIdRoute: ProductsProductIdRoute,
-  LoginIndexRoute: LoginIndexRoute,
-  UserAddressesIndexRoute: UserAddressesIndexRoute,
-  UserChangePasswordIndexRoute: UserChangePasswordIndexRoute,
-  UserOrdersIndexRoute: UserOrdersIndexRoute,
-  UserProfileIndexRoute: UserProfileIndexRoute,
-  UserSessionsIndexRoute: UserSessionsIndexRoute,
+  ProtectedCartRoute: ProtectedCartRoute,
+  ProtectedWishlistRoute: ProtectedWishlistRoute,
+  PublicAuthForgotPasswordRoute: PublicAuthForgotPasswordRoute,
+  PublicAuthLoginRoute: PublicAuthLoginRoute,
+  PublicAuthResetPasswordRoute: PublicAuthResetPasswordRoute,
+  PublicAuthSignupRoute: PublicAuthSignupRoute,
+  PublicAuthVerifyEmailRoute: PublicAuthVerifyEmailRoute,
+  PublicProductsProductIdRoute: PublicProductsProductIdRoute,
+  PublicCategoriesIndexRoute: PublicCategoriesIndexRoute,
+  PublicProductsIndexRoute: PublicProductsIndexRoute,
+  ProtectedUserAddressesIndexRoute: ProtectedUserAddressesIndexRoute,
+  ProtectedUserChangePasswordIndexRoute: ProtectedUserChangePasswordIndexRoute,
+  ProtectedUserOrdersIndexRoute: ProtectedUserOrdersIndexRoute,
+  ProtectedUserProfileIndexRoute: ProtectedUserProfileIndexRoute,
+  ProtectedUserSessionsIndexRoute: ProtectedUserSessionsIndexRoute,
+  PublicProductsDealsIndexRoute: PublicProductsDealsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

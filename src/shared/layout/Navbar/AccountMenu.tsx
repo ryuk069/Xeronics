@@ -1,15 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link } from '@tanstack/react-router'
+import { Link, useNavigate } from '@tanstack/react-router'
 import { CircleUser } from 'lucide-react'
 import { accountLinks } from './nav-data'
+import { useAuth } from '#/modules/auth/hooks/useAuth'
 
 export function AccountMenu() {
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
-
-  // const { user, isAuthenticated, isInitializing, signOut } = useAuth()
-  const isInitializing = false
-  const isAuthenticated = false
+  const navigate = useNavigate();
+  const { isAuthenticated, isInitializing, signOut } = useAuth()
 
   useEffect(() => {
     if (!open) return
@@ -30,8 +29,8 @@ export function AccountMenu() {
   const close = () => setOpen(false)
 
   const handleLogout = async () => {
-    // await signOut()
-    // navigate({ to: '/login', replace: true })
+    await signOut()
+    navigate({ to: '/login', replace: true })
     close()
   }
 
@@ -73,12 +72,13 @@ function UserMenu({
 }: {
   onNavigate: () => void
   onLogout: () => void
-}) {
+  }) {
+  const { user } = useAuth();
   return (
     <>
       <div className="mb-4 flex items-center gap-1 border-b border-(--border-strong) pb-3">
         <p className="text-(--text-secondary)">Hello,</p>
-        {/* <p>{user?.username}</p> */}
+        <p>{user?.username}</p>
       </div>
 
       <div className="flex flex-col gap-1">

@@ -1,0 +1,2126 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-07T00:00:00.000Z",
+  "categories": [
+    {
+      "slug": "phone",
+      "label": "Phone",
+      "subcategories": [
+        {
+          "slug": "cases-protection",
+          "label": "Cases & Protection",
+          "filters": [
+            {
+              "key": "caseType",
+              "label": "Case Type",
+              "type": "multi-select",
+              "options": [
+                "Clear Case",
+                "Silicone Case",
+                "Leather Case",
+                "Rugged Case",
+                "Bumper Case",
+                "Wallet Case",
+                "Folio Case"
+              ]
+            },
+            {
+              "key": "material",
+              "label": "Material",
+              "type": "multi-select",
+              "options": [
+                "Silicone",
+                "TPU",
+                "Polycarbonate",
+                "Leather",
+                "Fabric"
+              ]
+            },
+            {
+              "key": "magsafe",
+              "label": "MagSafe Compatible",
+              "type": "boolean"
+            },
+            {
+              "key": "dropProtection",
+              "label": "Drop Protection",
+              "type": "select",
+              "options": [
+                "Basic",
+                "Standard",
+                "Military Grade"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "charging-power",
+          "label": "Charging & Power",
+          "filters": [
+            {
+              "key": "wattage",
+              "label": "Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 5,
+              "max": 240
+            },
+            {
+              "key": "connectivityType",
+              "label": "Connectivity Type",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "USB-A",
+                "Wireless"
+              ]
+            },
+            {
+              "key": "chargingProtocol",
+              "label": "Charging Protocol",
+              "type": "multi-select",
+              "options": [
+                "USB PD",
+                "PPS",
+                "Quick Charge",
+                "MagSafe",
+                "Qi",
+                "Qi2"
+              ]
+            },
+            {
+              "key": "ports",
+              "label": "Number of Ports",
+              "type": "range",
+              "min": 1,
+              "max": 6
+            }
+          ]
+        },
+        {
+          "slug": "cables-adapters",
+          "label": "Cables & Adapters",
+          "filters": [
+            {
+              "key": "connector",
+              "label": "Connector",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "USB-A",
+                "Lightning",
+                "Micro USB",
+                "3.5mm"
+              ]
+            },
+            {
+              "key": "cableLength",
+              "label": "Cable Length",
+              "type": "range",
+              "unit": "m",
+              "min": 0.1,
+              "max": 5
+            },
+            {
+              "key": "dataSpeed",
+              "label": "Data Speed",
+              "type": "select",
+              "options": [
+                "USB 2.0",
+                "USB 3.0",
+                "USB 3.2",
+                "USB 4",
+                "Thunderbolt"
+              ]
+            },
+            {
+              "key": "wattage",
+              "label": "Power Delivery",
+              "type": "range",
+              "unit": "W",
+              "min": 5,
+              "max": 240
+            }
+          ]
+        },
+        {
+          "slug": "audio",
+          "label": "Audio",
+          "filters": [
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Bluetooth",
+                "Wired",
+                "Wireless"
+              ]
+            },
+            {
+              "key": "audioType",
+              "label": "Audio Type",
+              "type": "multi-select",
+              "options": [
+                "Earbuds",
+                "Headphones",
+                "Neckband",
+                "Earphones",
+                "Speakers"
+              ]
+            },
+            {
+              "key": "anc",
+              "label": "Active Noise Cancellation",
+              "type": "boolean"
+            },
+            {
+              "key": "batteryLife",
+              "label": "Battery Life",
+              "type": "range",
+              "unit": "hours",
+              "min": 1,
+              "max": 100
+            },
+            {
+              "key": "waterResistance",
+              "label": "Water Resistance",
+              "type": "select",
+              "options": [
+                "None",
+                "IPX4",
+                "IPX5",
+                "IPX7",
+                "IPX8"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "mounts-stands",
+          "label": "Mounts & Stands",
+          "filters": [
+            {
+              "key": "mountType",
+              "label": "Mount Type",
+              "type": "multi-select",
+              "options": [
+                "Car Mount",
+                "Desk Stand",
+                "Tripod",
+                "Selfie Stick",
+                "Bike Mount",
+                "Wall Mount"
+              ]
+            },
+            {
+              "key": "mountingMethod",
+              "label": "Mounting Method",
+              "type": "multi-select",
+              "options": [
+                "Magnetic",
+                "Clamp",
+                "Adhesive",
+                "Suction",
+                "Screw"
+              ]
+            },
+            {
+              "key": "adjustable",
+              "label": "Adjustable",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "screen-care",
+          "label": "Screen Care",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Screen Protector",
+                "Screen Cleaner",
+                "Cleaning Kit",
+                "Cleaning Cloth",
+                "Privacy Filter"
+              ]
+            },
+            {
+              "key": "protectorMaterial",
+              "label": "Protector Material",
+              "type": "select",
+              "options": [
+                "Tempered Glass",
+                "Hydrogel",
+                "TPU Film",
+                "PET Film"
+              ]
+            },
+            {
+              "key": "privacy",
+              "label": "Privacy Protection",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "photography-selfie",
+          "label": "Photography & Selfie",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Selfie Stick",
+                "Tripod",
+                "Gimbal",
+                "Ring Light",
+                "Lens Kit",
+                "Shutter Remote"
+              ]
+            },
+            {
+              "key": "connectivity",
+              "label": "Connectivity",
+              "type": "multi-select",
+              "options": [
+                "Bluetooth",
+                "USB-C",
+                "Wireless"
+              ]
+            },
+            {
+              "key": "remoteRange",
+              "label": "Remote Range",
+              "type": "range",
+              "unit": "m",
+              "min": 1,
+              "max": 100
+            }
+          ]
+        },
+        {
+          "slug": "other-accessories",
+          "label": "Other Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Phone Holder",
+                "Pop Socket",
+                "Lanyard",
+                "OTG Adapter",
+                "Card Reader",
+                "Stylus"
+              ]
+            },
+            {
+              "key": "material",
+              "label": "Material",
+              "type": "multi-select",
+              "options": [
+                "Plastic",
+                "Silicone",
+                "Metal",
+                "Leather",
+                "Fabric"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "laptop",
+      "label": "Laptop",
+      "subcategories": [
+        {
+          "slug": "bags-sleeves",
+          "label": "Bags & Sleeves",
+          "filters": [
+            {
+              "key": "bagType",
+              "label": "Bag Type",
+              "type": "multi-select",
+              "options": [
+                "Backpack",
+                "Sleeve",
+                "Messenger Bag",
+                "Laptop Bag",
+                "Briefcase"
+              ]
+            },
+            {
+              "key": "laptopSize",
+              "label": "Laptop Size",
+              "type": "multi-select",
+              "options": [
+                "11 inch",
+                "13 inch",
+                "14 inch",
+                "15 inch",
+                "16 inch",
+                "17 inch"
+              ]
+            },
+            {
+              "key": "waterResistant",
+              "label": "Water Resistant",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "stands-cooling",
+          "label": "Stands & Cooling",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Laptop Stand",
+                "Cooling Pad",
+                "Cooling Stand",
+                "Vertical Stand"
+              ]
+            },
+            {
+              "key": "fanCount",
+              "label": "Fan Count",
+              "type": "range",
+              "min": 0,
+              "max": 10
+            },
+            {
+              "key": "adjustable",
+              "label": "Adjustable",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "charging-power",
+          "label": "Charging & Power",
+          "filters": [
+            {
+              "key": "wattage",
+              "label": "Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 30,
+              "max": 330
+            },
+            {
+              "key": "connector",
+              "label": "Connector",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "Barrel Plug",
+                "MagSafe"
+              ]
+            },
+            {
+              "key": "gan",
+              "label": "GaN Technology",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "hubs-adapters",
+          "label": "Hubs & Adapters",
+          "filters": [
+            {
+              "key": "ports",
+              "label": "Number of Ports",
+              "type": "range",
+              "min": 1,
+              "max": 15
+            },
+            {
+              "key": "videoOutput",
+              "label": "Video Output",
+              "type": "multi-select",
+              "options": [
+                "HDMI",
+                "DisplayPort",
+                "VGA",
+                "USB-C Display"
+              ]
+            },
+            {
+              "key": "ethernet",
+              "label": "Ethernet",
+              "type": "boolean"
+            },
+            {
+              "key": "powerDelivery",
+              "label": "Power Delivery",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "storage",
+          "label": "Storage",
+          "filters": [
+            {
+              "key": "storageType",
+              "label": "Storage Type",
+              "type": "select",
+              "options": [
+                "SSD",
+                "HDD",
+                "NVMe SSD",
+                "External SSD",
+                "External HDD",
+                "Flash Drive"
+              ]
+            },
+            {
+              "key": "capacity",
+              "label": "Capacity",
+              "type": "range",
+              "unit": "GB",
+              "min": 32,
+              "max": 16000
+            },
+            {
+              "key": "interface",
+              "label": "Interface",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "USB 3.0",
+                "USB 3.2",
+                "Thunderbolt",
+                "SATA",
+                "NVMe"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "input-devices",
+          "label": "Input Devices",
+          "filters": [
+            {
+              "key": "deviceType",
+              "label": "Device Type",
+              "type": "multi-select",
+              "options": [
+                "Mouse",
+                "Keyboard",
+                "Trackpad",
+                "Numeric Keypad",
+                "Drawing Tablet"
+              ]
+            },
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Wired",
+                "Bluetooth",
+                "2.4GHz Wireless"
+              ]
+            },
+            {
+              "key": "backlit",
+              "label": "Backlit",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "other-accessories",
+          "label": "Other Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Webcam",
+                "Laptop Lock",
+                "Privacy Filter",
+                "Cleaning Kit",
+                "USB Light",
+                "Cable Organizer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "camera",
+      "label": "Camera",
+      "subcategories": [
+        {
+          "slug": "camera-bags",
+          "label": "Camera Bags",
+          "filters": [
+            {
+              "key": "bagType",
+              "label": "Bag Type",
+              "type": "multi-select",
+              "options": [
+                "Camera Backpack",
+                "Shoulder Bag",
+                "Sling Bag",
+                "Hard Case",
+                "Pouch"
+              ]
+            },
+            {
+              "key": "capacity",
+              "label": "Capacity",
+              "type": "select",
+              "options": [
+                "Small",
+                "Medium",
+                "Large",
+                "Professional"
+              ]
+            },
+            {
+              "key": "waterResistant",
+              "label": "Water Resistant",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "tripods-mounts",
+          "label": "Tripods & Mounts",
+          "filters": [
+            {
+              "key": "tripodType",
+              "label": "Tripod Type",
+              "type": "multi-select",
+              "options": [
+                "Tripod",
+                "Monopod",
+                "Tabletop Tripod",
+                "Gorillapod",
+                "Gimbal"
+              ]
+            },
+            {
+              "key": "maxHeight",
+              "label": "Maximum Height",
+              "type": "range",
+              "unit": "cm",
+              "min": 10,
+              "max": 250
+            },
+            {
+              "key": "material",
+              "label": "Material",
+              "type": "multi-select",
+              "options": [
+                "Aluminum",
+                "Carbon Fiber",
+                "Plastic"
+              ]
+            },
+            {
+              "key": "loadCapacity",
+              "label": "Load Capacity",
+              "type": "range",
+              "unit": "kg",
+              "min": 0.2,
+              "max": 20
+            }
+          ]
+        },
+        {
+          "slug": "batteries-charging",
+          "label": "Batteries & Charging",
+          "filters": [
+            {
+              "key": "batteryType",
+              "label": "Battery Type",
+              "type": "multi-select",
+              "options": [
+                "Li-ion",
+                "AA",
+                "AAA",
+                "CR2032",
+                "NP-F"
+              ]
+            },
+            {
+              "key": "chargerType",
+              "label": "Charger Type",
+              "type": "multi-select",
+              "options": [
+                "Single Charger",
+                "Dual Charger",
+                "USB Charger",
+                "Wall Charger"
+              ]
+            },
+            {
+              "key": "wattage",
+              "label": "Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 5,
+              "max": 100
+            }
+          ]
+        },
+        {
+          "slug": "memory-storage",
+          "label": "Memory & Storage",
+          "filters": [
+            {
+              "key": "cardType",
+              "label": "Card Type",
+              "type": "multi-select",
+              "options": [
+                "SD",
+                "microSD",
+                "CFexpress",
+                "CompactFlash"
+              ]
+            },
+            {
+              "key": "capacity",
+              "label": "Capacity",
+              "type": "range",
+              "unit": "GB",
+              "min": 8,
+              "max": 2048
+            },
+            {
+              "key": "speedClass",
+              "label": "Speed Class",
+              "type": "multi-select",
+              "options": [
+                "Class 10",
+                "U1",
+                "U3",
+                "V30",
+                "V60",
+                "V90"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cables-adapters",
+          "label": "Cables & Adapters",
+          "filters": [
+            {
+              "key": "connector",
+              "label": "Connector",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "USB-A",
+                "Micro USB",
+                "HDMI",
+                "Mini HDMI",
+                "DisplayPort"
+              ]
+            },
+            {
+              "key": "cableLength",
+              "label": "Cable Length",
+              "type": "range",
+              "unit": "m",
+              "min": 0.5,
+              "max": 10
+            }
+          ]
+        },
+        {
+          "slug": "lens-accessories",
+          "label": "Lens Accessories",
+          "filters": [
+            {
+              "key": "accessoryType",
+              "label": "Accessory Type",
+              "type": "multi-select",
+              "options": [
+                "UV Filter",
+                "ND Filter",
+                "Polarizer",
+                "Lens Hood",
+                "Lens Cap",
+                "Extension Tube",
+                "Adapter Ring"
+              ]
+            },
+            {
+              "key": "filterSize",
+              "label": "Filter Size",
+              "type": "range",
+              "unit": "mm",
+              "min": 20,
+              "max": 150
+            }
+          ]
+        },
+        {
+          "slug": "cleaning-care",
+          "label": "Cleaning & Care",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Cleaning Kit",
+                "Air Blower",
+                "Lens Pen",
+                "Microfiber Cloth",
+                "Sensor Cleaner",
+                "Cleaning Solution"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pc",
+      "label": "PC",
+      "subcategories": [
+        {
+          "slug": "components",
+          "label": "Components",
+          "filters": [
+            {
+              "key": "componentType",
+              "label": "Component Type",
+              "type": "multi-select",
+              "options": [
+                "CPU",
+                "GPU",
+                "RAM",
+                "Motherboard",
+                "Power Supply",
+                "Sound Card",
+                "Capture Card"
+              ]
+            },
+            {
+              "key": "brand",
+              "label": "Brand",
+              "type": "multi-select",
+              "options": [
+                "AMD",
+                "Intel",
+                "NVIDIA",
+                "ASUS",
+                "MSI",
+                "Gigabyte",
+                "ASRock",
+                "Corsair"
+              ]
+            },
+            {
+              "key": "generation",
+              "label": "Generation",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "slug": "storage",
+          "label": "Storage",
+          "filters": [
+            {
+              "key": "storageType",
+              "label": "Storage Type",
+              "type": "multi-select",
+              "options": [
+                "NVMe SSD",
+                "SATA SSD",
+                "HDD",
+                "External SSD",
+                "External HDD"
+              ]
+            },
+            {
+              "key": "capacity",
+              "label": "Capacity",
+              "type": "range",
+              "unit": "GB",
+              "min": 128,
+              "max": 24000
+            },
+            {
+              "key": "interface",
+              "label": "Interface",
+              "type": "multi-select",
+              "options": [
+                "PCIe 3.0",
+                "PCIe 4.0",
+                "PCIe 5.0",
+                "SATA III",
+                "USB 3.2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cooling",
+          "label": "Cooling",
+          "filters": [
+            {
+              "key": "coolerType",
+              "label": "Cooler Type",
+              "type": "multi-select",
+              "options": [
+                "Air Cooler",
+                "AIO Liquid Cooler",
+                "Case Fan",
+                "Thermal Paste",
+                "Heatsink"
+              ]
+            },
+            {
+              "key": "fanSize",
+              "label": "Fan Size",
+              "type": "multi-select",
+              "options": [
+                "80mm",
+                "92mm",
+                "120mm",
+                "140mm",
+                "200mm"
+              ]
+            },
+            {
+              "key": "rgb",
+              "label": "RGB",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "power-ups",
+          "label": "Power & UPS",
+          "filters": [
+            {
+              "key": "powerType",
+              "label": "Power Type",
+              "type": "multi-select",
+              "options": [
+                "UPS",
+                "SMPS",
+                "Power Supply",
+                "Surge Protector",
+                "Power Strip"
+              ]
+            },
+            {
+              "key": "wattage",
+              "label": "Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 200,
+              "max": 2000
+            },
+            {
+              "key": "batteryBackup",
+              "label": "Battery Backup",
+              "type": "range",
+              "unit": "min",
+              "min": 0,
+              "max": 120
+            }
+          ]
+        },
+        {
+          "slug": "cables-adapters",
+          "label": "Cables & Adapters",
+          "filters": [
+            {
+              "key": "cableType",
+              "label": "Cable Type",
+              "type": "multi-select",
+              "options": [
+                "HDMI",
+                "DisplayPort",
+                "Ethernet",
+                "USB",
+                "SATA",
+                "Power Cable"
+              ]
+            },
+            {
+              "key": "length",
+              "label": "Length",
+              "type": "range",
+              "unit": "m",
+              "min": 0.1,
+              "max": 20
+            }
+          ]
+        },
+        {
+          "slug": "input-devices",
+          "label": "Input Devices",
+          "filters": [
+            {
+              "key": "deviceType",
+              "label": "Device Type",
+              "type": "multi-select",
+              "options": [
+                "Keyboard",
+                "Mouse",
+                "Webcam",
+                "Microphone",
+                "Drawing Tablet"
+              ]
+            },
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Wired",
+                "Bluetooth",
+                "2.4GHz Wireless"
+              ]
+            },
+            {
+              "key": "rgb",
+              "label": "RGB",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "other-accessories",
+          "label": "Other Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "USB Hub",
+                "Cable Management",
+                "Desk Mat",
+                "Monitor Arm",
+                "PC Stand",
+                "Dust Filter"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "smart-accessories",
+      "label": "Smart Accessories",
+      "subcategories": [
+        {
+          "slug": "smartwatches",
+          "label": "Smartwatches",
+          "filters": [
+            {
+              "key": "displayType",
+              "label": "Display Type",
+              "type": "select",
+              "options": [
+                "AMOLED",
+                "OLED",
+                "LCD",
+                "TFT"
+              ]
+            },
+            {
+              "key": "screenSize",
+              "label": "Screen Size",
+              "type": "range",
+              "unit": "inch",
+              "min": 0.8,
+              "max": 3
+            },
+            {
+              "key": "waterResistance",
+              "label": "Water Resistance",
+              "type": "select",
+              "options": [
+                "None",
+                "IP67",
+                "IP68",
+                "5ATM",
+                "10ATM"
+              ]
+            },
+            {
+              "key": "gps",
+              "label": "GPS",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "fitness-trackers",
+          "label": "Fitness Trackers",
+          "filters": [
+            {
+              "key": "display",
+              "label": "Display",
+              "type": "boolean"
+            },
+            {
+              "key": "heartRate",
+              "label": "Heart Rate Monitoring",
+              "type": "boolean"
+            },
+            {
+              "key": "gps",
+              "label": "GPS",
+              "type": "boolean"
+            },
+            {
+              "key": "waterResistance",
+              "label": "Water Resistance",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "smart-home",
+          "label": "Smart Home",
+          "filters": [
+            {
+              "key": "deviceType",
+              "label": "Device Type",
+              "type": "multi-select",
+              "options": [
+                "Smart Bulb",
+                "Smart Plug",
+                "Smart Switch",
+                "Security Camera",
+                "Smart Sensor",
+                "Smart Speaker"
+              ]
+            },
+            {
+              "key": "connectivity",
+              "label": "Connectivity",
+              "type": "multi-select",
+              "options": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Zigbee",
+                "Z-Wave",
+                "Matter"
+              ]
+            },
+            {
+              "key": "voiceAssistant",
+              "label": "Voice Assistant",
+              "type": "multi-select",
+              "options": [
+                "Alexa",
+                "Google Assistant",
+                "Apple Home",
+                "None"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "mounts-stands",
+          "label": "Mounts & Stands",
+          "filters": [
+            {
+              "key": "mountType",
+              "label": "Mount Type",
+              "type": "multi-select",
+              "options": [
+                "Desk Stand",
+                "Wall Mount",
+                "Ceiling Mount",
+                "Car Mount",
+                "Bike Mount"
+              ]
+            },
+            {
+              "key": "mountingMethod",
+              "label": "Mounting Method",
+              "type": "multi-select",
+              "options": [
+                "Clamp",
+                "Screw",
+                "Adhesive",
+                "Magnetic"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "charging-power",
+          "label": "Charging & Power",
+          "filters": [
+            {
+              "key": "wattage",
+              "label": "Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 5,
+              "max": 240
+            },
+            {
+              "key": "chargingType",
+              "label": "Charging Type",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "Wireless",
+                "Magnetic",
+                "Solar"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "audio",
+          "label": "Audio",
+          "filters": [
+            {
+              "key": "audioType",
+              "label": "Audio Type",
+              "type": "multi-select",
+              "options": [
+                "Smart Speaker",
+                "Earbuds",
+                "Headphones",
+                "Bluetooth Speaker"
+              ]
+            },
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Bluetooth",
+                "Wi-Fi",
+                "Wired"
+              ]
+            },
+            {
+              "key": "voiceAssistant",
+              "label": "Voice Assistant",
+              "type": "multi-select",
+              "options": [
+                "Alexa",
+                "Google Assistant",
+                "Siri",
+                "None"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "other-accessories",
+          "label": "Other Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Smart Tag",
+                "Smart Remote",
+                "USB Hub",
+                "Sensor",
+                "Cable Organizer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tablet",
+      "label": "Tablet",
+      "subcategories": [
+        {
+          "slug": "cases-protection",
+          "label": "Cases & Protection",
+          "filters": [
+            {
+              "key": "caseType",
+              "label": "Case Type",
+              "type": "multi-select",
+              "options": [
+                "Folio",
+                "Rugged",
+                "Keyboard Case",
+                "Clear",
+                "Sleeve"
+              ]
+            },
+            {
+              "key": "material",
+              "label": "Material",
+              "type": "multi-select",
+              "options": [
+                "Silicone",
+                "TPU",
+                "Polycarbonate",
+                "Leather"
+              ]
+            },
+            {
+              "key": "dropProtection",
+              "label": "Drop Protection",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "stands-mounts",
+          "label": "Stands & Mounts",
+          "filters": [
+            {
+              "key": "mountType",
+              "label": "Mount Type",
+              "type": "multi-select",
+              "options": [
+                "Desk Stand",
+                "Wall Mount",
+                "Car Mount",
+                "Bed Stand",
+                "Floor Stand"
+              ]
+            },
+            {
+              "key": "adjustable",
+              "label": "Adjustable",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "charging-power",
+          "label": "Charging & Power",
+          "filters": [
+            {
+              "key": "wattage",
+              "label": "Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 5,
+              "max": 140
+            },
+            {
+              "key": "connector",
+              "label": "Connector",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "USB-A",
+                "Wireless"
+              ]
+            },
+            {
+              "key": "protocol",
+              "label": "Charging Protocol",
+              "type": "multi-select",
+              "options": [
+                "USB PD",
+                "PPS",
+                "Quick Charge"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cables-adapters",
+          "label": "Cables & Adapters",
+          "filters": [
+            {
+              "key": "connector",
+              "label": "Connector",
+              "type": "multi-select",
+              "options": [
+                "USB-C",
+                "USB-A",
+                "HDMI",
+                "DisplayPort",
+                "Lightning"
+              ]
+            },
+            {
+              "key": "length",
+              "label": "Cable Length",
+              "type": "range",
+              "unit": "m",
+              "min": 0.1,
+              "max": 5
+            }
+          ]
+        },
+        {
+          "slug": "stylus-input",
+          "label": "Stylus & Input",
+          "filters": [
+            {
+              "key": "inputType",
+              "label": "Input Type",
+              "type": "multi-select",
+              "options": [
+                "Stylus",
+                "Keyboard",
+                "Trackpad",
+                "Drawing Pen"
+              ]
+            },
+            {
+              "key": "pressureLevels",
+              "label": "Pressure Levels",
+              "type": "range",
+              "min": 0,
+              "max": 16384
+            },
+            {
+              "key": "palmRejection",
+              "label": "Palm Rejection",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "other-accessories",
+          "label": "Other Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Tablet Holder",
+                "Cleaning Kit",
+                "Privacy Filter",
+                "Card Reader",
+                "USB Hub"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gaming",
+      "label": "Gaming",
+      "subcategories": [
+        {
+          "slug": "gaming-mice",
+          "label": "Gaming Mice",
+          "filters": [
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Wired",
+                "Bluetooth",
+                "2.4GHz Wireless"
+              ]
+            },
+            {
+              "key": "dpi",
+              "label": "DPI",
+              "type": "range",
+              "min": 400,
+              "max": 32000
+            },
+            {
+              "key": "sensor",
+              "label": "Sensor",
+              "type": "select",
+              "options": [
+                "Optical",
+                "Laser"
+              ]
+            },
+            {
+              "key": "rgb",
+              "label": "RGB",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "gaming-keyboards",
+          "label": "Gaming Keyboards",
+          "filters": [
+            {
+              "key": "switchType",
+              "label": "Switch Type",
+              "type": "multi-select",
+              "options": [
+                "Mechanical",
+                "Membrane",
+                "Optical",
+                "Hall Effect"
+              ]
+            },
+            {
+              "key": "layout",
+              "label": "Layout",
+              "type": "multi-select",
+              "options": [
+                "60%",
+                "65%",
+                "75%",
+                "TKL",
+                "Full Size"
+              ]
+            },
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Wired",
+                "Bluetooth",
+                "2.4GHz Wireless"
+              ]
+            },
+            {
+              "key": "rgb",
+              "label": "RGB",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "gaming-headsets",
+          "label": "Gaming Headsets",
+          "filters": [
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Wired",
+                "Bluetooth",
+                "2.4GHz Wireless"
+              ]
+            },
+            {
+              "key": "surroundSound",
+              "label": "Surround Sound",
+              "type": "boolean"
+            },
+            {
+              "key": "microphone",
+              "label": "Microphone",
+              "type": "boolean"
+            },
+            {
+              "key": "anc",
+              "label": "Active Noise Cancellation",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "controllers",
+          "label": "Controllers",
+          "filters": [
+            {
+              "key": "platform",
+              "label": "Platform",
+              "type": "multi-select",
+              "options": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo Switch",
+                "Mobile"
+              ]
+            },
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "Wired",
+                "Bluetooth",
+                "2.4GHz Wireless"
+              ]
+            },
+            {
+              "key": "hapticFeedback",
+              "label": "Haptic Feedback",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "mouse-pads",
+          "label": "Mouse Pads",
+          "filters": [
+            {
+              "key": "size",
+              "label": "Size",
+              "type": "select",
+              "options": [
+                "Small",
+                "Medium",
+                "Large",
+                "XL",
+                "Desk Mat"
+              ]
+            },
+            {
+              "key": "surface",
+              "label": "Surface",
+              "type": "select",
+              "options": [
+                "Speed",
+                "Control",
+                "Hybrid"
+              ]
+            },
+            {
+              "key": "rgb",
+              "label": "RGB",
+              "type": "boolean"
+            },
+            {
+              "key": "thickness",
+              "label": "Thickness",
+              "type": "range",
+              "unit": "mm",
+              "min": 1,
+              "max": 8
+            }
+          ]
+        },
+        {
+          "slug": "streaming-accessories",
+          "label": "Streaming Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Microphone",
+                "Webcam",
+                "Capture Card",
+                "Ring Light",
+                "Stream Deck",
+                "Boom Arm"
+              ]
+            },
+            {
+              "key": "connection",
+              "label": "Connection",
+              "type": "multi-select",
+              "options": [
+                "USB",
+                "USB-C",
+                "XLR",
+                "HDMI"
+              ]
+            },
+            {
+              "key": "resolution",
+              "label": "Resolution",
+              "type": "select",
+              "options": [
+                "720p",
+                "1080p",
+                "1440p",
+                "4K"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gaming-stands",
+          "label": "Gaming Stands",
+          "filters": [
+            {
+              "key": "standType",
+              "label": "Stand Type",
+              "type": "multi-select",
+              "options": [
+                "Headset Stand",
+                "Controller Stand",
+                "Monitor Stand",
+                "Laptop Stand",
+                "Console Stand"
+              ]
+            },
+            {
+              "key": "rgb",
+              "label": "RGB",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "other-gaming-accessories",
+          "label": "Other Gaming Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Cable Management",
+                "Controller Grips",
+                "Thumb Grips",
+                "Gaming Gloves",
+                "Cleaning Kit",
+                "USB Hub"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "networking",
+      "label": "Networking",
+      "subcategories": [
+        {
+          "slug": "wifi-adapters",
+          "label": "Wi-Fi Adapters",
+          "filters": [
+            {
+              "key": "wifiStandard",
+              "label": "Wi-Fi Standard",
+              "type": "multi-select",
+              "options": [
+                "Wi-Fi 4",
+                "Wi-Fi 5",
+                "Wi-Fi 6",
+                "Wi-Fi 6E",
+                "Wi-Fi 7"
+              ]
+            },
+            {
+              "key": "interface",
+              "label": "Interface",
+              "type": "multi-select",
+              "options": [
+                "USB",
+                "PCIe",
+                "M.2"
+              ]
+            },
+            {
+              "key": "antennaCount",
+              "label": "Antenna Count",
+              "type": "range",
+              "min": 1,
+              "max": 8
+            }
+          ]
+        },
+        {
+          "slug": "routers",
+          "label": "Routers",
+          "filters": [
+            {
+              "key": "wifiStandard",
+              "label": "Wi-Fi Standard",
+              "type": "multi-select",
+              "options": [
+                "Wi-Fi 5",
+                "Wi-Fi 6",
+                "Wi-Fi 6E",
+                "Wi-Fi 7"
+              ]
+            },
+            {
+              "key": "bands",
+              "label": "Bands",
+              "type": "select",
+              "options": [
+                "Single Band",
+                "Dual Band",
+                "Tri Band",
+                "Quad Band"
+              ]
+            },
+            {
+              "key": "ethernetSpeed",
+              "label": "Ethernet Speed",
+              "type": "multi-select",
+              "options": [
+                "100 Mbps",
+                "1 Gbps",
+                "2.5 Gbps",
+                "10 Gbps"
+              ]
+            },
+            {
+              "key": "mesh",
+              "label": "Mesh Support",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "switches",
+          "label": "Switches",
+          "filters": [
+            {
+              "key": "portCount",
+              "label": "Port Count",
+              "type": "range",
+              "min": 4,
+              "max": 48
+            },
+            {
+              "key": "speed",
+              "label": "Port Speed",
+              "type": "multi-select",
+              "options": [
+                "100 Mbps",
+                "1 Gbps",
+                "2.5 Gbps",
+                "10 Gbps"
+              ]
+            },
+            {
+              "key": "managed",
+              "label": "Managed",
+              "type": "boolean"
+            },
+            {
+              "key": "poe",
+              "label": "PoE",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "ethernet-cables",
+          "label": "Ethernet Cables",
+          "filters": [
+            {
+              "key": "category",
+              "label": "Cable Category",
+              "type": "select",
+              "options": [
+                "Cat5e",
+                "Cat6",
+                "Cat6a",
+                "Cat7",
+                "Cat8"
+              ]
+            },
+            {
+              "key": "length",
+              "label": "Length",
+              "type": "range",
+              "unit": "m",
+              "min": 0.5,
+              "max": 100
+            },
+            {
+              "key": "shielding",
+              "label": "Shielding",
+              "type": "select",
+              "options": [
+                "Unshielded",
+                "Shielded"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "network-accessories",
+          "label": "Network Accessories",
+          "filters": [
+            {
+              "key": "productType",
+              "label": "Product Type",
+              "type": "multi-select",
+              "options": [
+                "Patch Panel",
+                "RJ45 Connector",
+                "Crimping Tool",
+                "Cable Tester",
+                "Network Rack",
+                "Cable Organizer"
+              ]
+            },
+            {
+              "key": "rackSize",
+              "label": "Rack Size",
+              "type": "range",
+              "unit": "U",
+              "min": 1,
+              "max": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "monitors-displays",
+      "label": "Monitors & Displays",
+      "subcategories": [
+        {
+          "slug": "computer-monitors",
+          "label": "Computer Monitors",
+          "filters": [
+            {
+              "key": "screenSize",
+              "label": "Screen Size",
+              "type": "range",
+              "unit": "inch",
+              "min": 19,
+              "max": 57
+            },
+            {
+              "key": "resolution",
+              "label": "Resolution",
+              "type": "multi-select",
+              "options": [
+                "Full HD",
+                "QHD",
+                "4K",
+                "5K",
+                "8K"
+              ]
+            },
+            {
+              "key": "panelType",
+              "label": "Panel Type",
+              "type": "multi-select",
+              "options": [
+                "IPS",
+                "VA",
+                "TN",
+                "OLED",
+                "Mini LED"
+              ]
+            },
+            {
+              "key": "refreshRate",
+              "label": "Refresh Rate",
+              "type": "range",
+              "unit": "Hz",
+              "min": 60,
+              "max": 540
+            }
+          ]
+        },
+        {
+          "slug": "monitor-arms",
+          "label": "Monitor Arms",
+          "filters": [
+            {
+              "key": "mountType",
+              "label": "Mount Type",
+              "type": "multi-select",
+              "options": [
+                "Desk Clamp",
+                "Grommet",
+                "Wall Mount"
+              ]
+            },
+            {
+              "key": "monitorCount",
+              "label": "Monitor Count",
+              "type": "range",
+              "min": 1,
+              "max": 6
+            },
+            {
+              "key": "vesa",
+              "label": "VESA Compatible",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "display-cables",
+          "label": "Display Cables",
+          "filters": [
+            {
+              "key": "connector",
+              "label": "Connector",
+              "type": "multi-select",
+              "options": [
+                "HDMI",
+                "DisplayPort",
+                "USB-C",
+                "DVI",
+                "VGA"
+              ]
+            },
+            {
+              "key": "resolution",
+              "label": "Maximum Resolution",
+              "type": "select",
+              "options": [
+                "1080p",
+                "1440p",
+                "4K",
+                "8K"
+              ]
+            },
+            {
+              "key": "length",
+              "label": "Length",
+              "type": "range",
+              "unit": "m",
+              "min": 0.5,
+              "max": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "power-electrical",
+      "label": "Power & Electrical",
+      "subcategories": [
+        {
+          "slug": "power-banks",
+          "label": "Power Banks",
+          "filters": [
+            {
+              "key": "capacity",
+              "label": "Capacity",
+              "type": "range",
+              "unit": "mAh",
+              "min": 1000,
+              "max": 50000
+            },
+            {
+              "key": "wattage",
+              "label": "Output Wattage",
+              "type": "range",
+              "unit": "W",
+              "min": 5,
+              "max": 240
+            },
+            {
+              "key": "ports",
+              "label": "Output Ports",
+              "type": "range",
+              "min": 1,
+              "max": 6
+            },
+            {
+              "key": "fastCharging",
+              "label": "Fast Charging",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "slug": "power-strips",
+          "label": "Power Strips",
+          "filters": [
+            {
+              "key": "socketCount",
+              "label": "Socket Count",
+              "type": "range",
+              "min": 2,
+              "max": 12
+            },
+            {
+              "key": "usbPorts",
+              "label": "USB Ports",
+              "type": "range",
+              "min": 0,
+              "max": 8
+            },
+            {
+              "key": "surgeProtection",
+              "label": "Surge Protection",
+              "type": "boolean"
+            },
+            {
+              "key": "maxPower",
+              "label": "Maximum Power",
+              "type": "range",
+              "unit": "W",
+              "min": 500,
+              "max": 5000
+            }
+          ]
+        },
+        {
+          "slug": "ups",
+          "label": "UPS",
+          "filters": [
+            {
+              "key": "capacity",
+              "label": "Capacity",
+              "type": "range",
+              "unit": "VA",
+              "min": 400,
+              "max": 5000
+            },
+            {
+              "key": "backupTime",
+              "label": "Backup Time",
+              "type": "range",
+              "unit": "min",
+              "min": 1,
+              "max": 120
+            },
+            {
+              "key": "topology",
+              "label": "Topology",
+              "type": "select",
+              "options": [
+                "Offline",
+                "Line Interactive",
+                "Online"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "surge-protection",
+          "label": "Surge Protection",
+          "filters": [
+            {
+              "key": "protectionRating",
+              "label": "Protection Rating",
+              "type": "range",
+              "unit": "J",
+              "min": 100,
+              "max": 5000
+            },
+            {
+              "key": "socketCount",
+              "label": "Socket Count",
+              "type": "range",
+              "min": 1,
+              "max": 12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

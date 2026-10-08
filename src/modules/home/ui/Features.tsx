@@ -4,7 +4,7 @@ const Features = () => {
   return (
     <section className="four-features">
       <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
-        <div className="flex justify-center border border-(--border-strong) p-5">
+        <div className="flex justify-center border border-(--border-strong) p-10">
           <div className=" flex justify-end items-center mr-5">
             <Van color="var(--accent)" size={35} />
           </div>
@@ -14,7 +14,7 @@ const Features = () => {
             <span className="text-(--text-secondary)">On orders over $49</span>
           </div>
         </div>
-        <div className="flex justify-center border border-(--border-strong) p-5">
+        <div className="flex justify-center border border-(--border-strong) p-10">
           <div className=" flex justify-end items-center mr-5">
             <Shield color="var(--accent)" size={35} />
           </div>
@@ -24,7 +24,7 @@ const Features = () => {
             <span className="text-(--text-secondary)">On most accessories</span>
           </div>
         </div>
-        <div className="flex justify-center border border-(--border-strong) p-5">
+        <div className="flex justify-center border border-(--border-strong) p-10">
           <div className=" flex justify-end items-center mr-5">
             <RotateCwClock color="var(--accent)" size={35} />
           </div>
@@ -34,7 +34,7 @@ const Features = () => {
             <span className="text-(--text-secondary)">No questions asked</span>
           </div>
         </div>
-        <div className="flex justify-center border border-(--border-strong) p-5">
+        <div className="flex justify-center border border-(--border-strong) p-10">
           <div className=" flex justify-end items-center mr-5">
             <Lock color="var(--accent)" size={35} />
           </div>

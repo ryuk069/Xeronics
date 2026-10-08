@@ -20,6 +20,7 @@ const Restock = () => {
             type="email"
             id="email"
             name="email"
+            autoComplete="email"
             placeholder="you@email.com"
             className="min-w-0 flex-1 rounded-lg border border-zinc-800 bg-[#090b0d] px-6 py-4 text-base text-zinc-100 outline-none placeholder:text-zinc-600 focus:border-(--accent)"
           />

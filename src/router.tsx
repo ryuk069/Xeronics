@@ -15,7 +15,10 @@ export function getRouter() {
     defaultPreloadStaleTime: 0,
   })
 
-  setupRouterSsrQueryIntegration({ router, queryClient: context.queryClient })
+  setupRouterSsrQueryIntegration({
+    router,
+    queryClient: context.queryClient,
+  })
 
   return router
 }
@@ -23,5 +26,11 @@ export function getRouter() {
 declare module '@tanstack/react-router' {
   interface Register {
     router: ReturnType<typeof getRouter>
+  }
+}
+
+declare module '@tanstack/react-router' {
+  interface HistoryState {
+    email?: string
   }
 }

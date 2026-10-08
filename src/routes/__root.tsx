@@ -13,6 +13,8 @@ import appCss from '../styles.css?url'
 import type { QueryClient } from '@tanstack/react-query'
 import { Navbar } from '../shared/layout/Navbar/Navbar'
 import { Footer } from '../shared/layout/Footer/Footer'
+import { AuthProvider } from '#/modules/auth/context/authProvider'
+import { cdn } from '#/shared/libs/cdn/cdn'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -50,7 +52,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       {
         rel: 'icon',
         type: 'image/svg+xml',
-        href: '/favicon.svg',
+        href: cdn('favicon-v1.svg'),
       },
     ],
   }),
@@ -65,11 +67,11 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body className="flex flex-col min-h-screen">
-        <Navbar></Navbar>
-        <main className='flex-1'>
-        {children}
-        </main>
-        <Footer></Footer>
+        <AuthProvider>
+          <Navbar></Navbar>
+          <main className="flex-1">{children}</main>
+          <Footer></Footer>
+        </AuthProvider>
         <TanStackDevtools
           config={{
             position: 'bottom-right',

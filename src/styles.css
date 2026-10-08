@@ -1,10 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* use base to style just element and create variable  */
 @layer base {
- :root {
-  /* Background */
-  --bg-canvas: radial-gradient(
+  :root {
+    /* Background */
+    --bg-canvas:
+      radial-gradient(
         circle at 15% 10%,
         rgb(37 99 235 / 18%),
         transparent 30rem
@@ -15,35 +16,35 @@
         transparent 28rem
       ),
       #020617;
-  --bg-page: #0b0d10;
+    --bg-page: #0b0d10;
 
-  /* Surfaces */
-  --surface: #14171b;
-  --surface-2: #1b1f24;
-  --surface-3: #1e2833;
+    /* Surfaces */
+    --surface: #14171b;
+    --surface-2: #1b1f24;
+    --surface-3: #1e2833;
 
-  /* Borders */
-  --border-soft: #1b1f25;
-  --border: #262b32;
-  --border-strong: hsl(222 4% 44%);
+    /* Borders */
+    --border-soft: #1b1f25;
+    --border: #262b32;
+    --border-strong: hsl(222 4% 44%);
 
-  /* Text */
-  --text-primary: #edeff2;
-  --text-secondary: #8b93a1;
-  --text-tertiary: #565d68;
+    /* Text */
+    --text-primary: #edeff2;
+    --text-secondary: #8b93a1;
+    --text-tertiary: #565d68;
 
-  /* Brand */
-  --accent: #14e0c4;
-  --accent-dim: #0e9d89;
-  --accent-soft: rgba(20, 224, 196, 0.12);
-  --accent-soft-2: rgba(20, 224, 196, 0.06);
+    /* Brand */
+    --accent: #14e0c4;
+    --accent-dim: #0e9d89;
+    --accent-soft: rgba(20, 224, 196, 0.12);
+    --accent-soft-2: rgba(20, 224, 196, 0.06);
 
-  /* Status */
-  --signal: #ff7a45;
-  --signal-soft: rgba(255, 122, 69, 0.14);
-  --success: #3ddc84;
-  --discount: hsl(17 90% 61%);
-}
+    /* Status */
+    --signal: #ff7a45;
+    --signal-soft: rgba(255, 122, 69, 0.14);
+    --success: #3ddc84;
+    --discount: hsl(17 90% 61%);
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -71,10 +72,108 @@
 
 /* ues components to style classess not a element */
 @layer components {
+  .auth-card-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .forgot-password-link {
+    align-self: flex-end;
+    margin-top: -0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  .auth-card-form button {
+    min-height: 48px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.1s ease;
+  }
 
+  .auth-card-form button:hover {
+    background: var(--accent);
+    color: black;
+  }
+
+  .auth-card-form button:active {
+    transform: scale(0.98);
+  }
+  .form-message {
+    width: 100%;
+
+    margin: 0 0 1.5rem;
+    padding: 0.9rem 1rem;
+
+    box-sizing: border-box;
+
+    border: 1px solid;
+    border-radius: 0.625rem;
+
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .form-message[data-type='error'] {
+    color: crimson;
+    background: white;
+    border: 1x solid var(--border-strong);
+  }
+
+  .form-message[data-type='success'] {
+    color: white;
+    background: var(--accent-dim);
+    border-color: #bbf7d0;
+  }
+  @media (max-width: 600px) {
+    .auth-card {
+      width: calc(100% - 2rem);
+
+      margin: 2.5rem auto;
+      padding: 2rem 1.5rem;
+
+      border-radius: 1rem;
+    }
+
+    .auth-card h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .password-field {
+    position: relative;
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.5rem;
+    min-height: auto !important;
+    padding: 0.35rem 0.5rem;
+    border: 0;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+  }
+
+  .password-toggle:hover {
+    color: var(--accent);
+  }
 }
 
 /* use utilities to create custom classes */
 @layer utilities {
-
 }

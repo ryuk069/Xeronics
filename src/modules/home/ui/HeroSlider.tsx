@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { cdn } from '#/shared/libs/cdn/cdn'
 
 const slides = [
-  { src: cdn('banners/headphone1-v1.webp'), alt: 'Wireless headphones' },
   { src: cdn('banners/headphone2-v1.webp'), alt: 'Over-ear headphones' },
   { src: cdn('banners/airpod1-1.webp'), alt: 'Wireless earbuds' },
+  { src: cdn('banners/headphone1-v1.webp'), alt: 'Wireless headphones' },
 ]
 
 const HeroSlider = () => {

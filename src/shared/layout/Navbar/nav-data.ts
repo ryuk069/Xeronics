@@ -1,10 +1,10 @@
-// components/layout/shop/nav-data.ts
+// nav-data.ts
 export const categories = [
-  { label: 'Charging & Power', to: '/products' },
-  { label: 'Audio', to: '/products' },
-  { label: 'Cases & Protection', to: '/products' },
-  { label: 'Cables', to: '/products' },
-  { label: 'Storage', to: '/products' },
+  { label: 'Charging & Power', subcat: 'charging-power' },
+  { label: 'Audio', subcat: 'audio' },
+  { label: 'Cases & Protection', subcat: 'cases-protection' },
+  { label: 'Cables', subcat: 'cables' },
+  { label: 'Storage', subcat: 'storage' },
 ] as const
 
 export const accountLinks = [

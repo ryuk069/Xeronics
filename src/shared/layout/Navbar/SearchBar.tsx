@@ -6,6 +6,7 @@ export function SearchBar() {
       <Search className="text-(--text-secondary)" size={20} />
       <input
         type="text"
+        name='searchbar'
         aria-label="Search products"
         className="w-full border-none text-(--text-primary) outline-none"
         placeholder="Search for Products, Brands and More"

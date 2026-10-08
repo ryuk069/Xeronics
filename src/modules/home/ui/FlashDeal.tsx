@@ -34,3 +34,17 @@ const FlashDeal = () => {
 }
 
 export default FlashDeal
+
+function CountdownBox({ value, label }: any) {
+  return (
+    <div className="flex h-20 w-20 flex-col items-center justify-center rounded-lg border border-zinc-800 bg-[#101719] sm:h-22 sm:w-22">
+      <span className="font-mono text-2xl font-semibold text-(--accent)">
+        {value}
+      </span>
+
+      <span className="mt-1 text-[10px] tracking-widest text-zinc-500">
+        {label}
+      </span>
+    </div>
+  )
+}
